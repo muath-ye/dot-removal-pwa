@@ -1,4 +1,4 @@
-const CACHE_NAME = 'dot-removal-pwa-v1';
+const CACHE_NAME = 'dot-removal-pwa-v2';
 const assetsToCache = [
     './',
     './index.html',
