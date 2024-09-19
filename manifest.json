@@ -1,0 +1,21 @@
+{
+    "name": "إزالة النقاط من النصوص العربية",
+    "short_name": "إزالة النقاط",
+    "description": "أداة لإزالة النقاط من النصوص العربية بسهولة، مع خيار إزالة التشكيل أيضاً.",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffc517",
+    "icons": [
+        {
+            "src": "icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إزالة النقاط من النصوص العربية</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="أداة لإزالة النقاط من النصوص العربية بسهولة، مع خيار إزالة التشكيل أيضاً.">
+    <meta name="keywords" content="إزالة النقاط, نصوص عربية, تشكيل, أداة, معالجة نصوص">
+    <link rel="canonical" href="https://dot-removal.muathye.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dot-removal.muathye.com/">
+    <meta property="og:title" content="إزالة النقاط من النصوص العربية">
+    <meta property="og:description" content="أداة لإزالة النقاط من النصوص العربية بسهولة، مع خيار إزالة التشكيل أيضاً.">
+    <meta property="og:image" content="https://dot-removal.muathye.com/images/og-image.jpg">
+    <meta property="og:locale" content="ar_AR">
+    <meta property="og:site_name" content="Dot Removal Tool">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://dot-removal.muathye.com/">
+    <meta name="twitter:title" content="إزالة النقاط من النصوص العربية">
+    <meta name="twitter:description"
+        content="أداة لإزالة النقاط من النصوص العربية بسهولة، مع خيار إزالة التشكيل أيضاً.">
+    <meta name="twitter:image" content="https://dot-removal.muathye.com/images/twitter-image.jpg">
+    <meta name="twitter:creator" content="@YourTwitterHandle">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "إزالة النقاط من النصوص العربية",
+      "url": "https://dot-removal.muathye.com/",
+      "description": "أداة لإزالة النقاط من النصوص العربية بسهولة، مع خيار إزالة التشكيل أيضاً.",
+      "applicationCategory": "TextEditor",
+      "operatingSystem": "All",
+      "inLanguage": "ar"
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Tailwind CSS CDN -->
+    <link href="tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+    <header class="mb-6">
+        <h1 class="text-2xl font-bold text-gray-800 text-center">إزالة النقاط من النصوص العربية</h1>
+        <p class="text-center text-sm text-gray-500 mt-2">
+            مدعوم من <a href="https://muathye.com" target="_blank" rel="noopener noreferrer"
+                class="text-blue-500 hover:underline">muathye.com</a>
+        </p>
+    </header>
+
+    <main class="bg-white p-8 rounded-xl shadow-lg w-11/12 max-w-2xl">
+        <!-- Example Source Link (Optional) -->
+        <!-- <a href="https://bird1.ahlamontada.com/t1431-topic" class="text-blue-500 hover:underline mb-4 inline-block">مصدر النص</a> -->
+
+        <textarea id="inputText"
+            class="w-full h-40 p-4 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none text-right"
+            placeholder="أدخل النص العربي هنا...">مُزَرْفِنُ الصُّدْغِ يَسْطُو لَحْظُهُ عَبَثًا *** بِالْخُلْقِ جَذْلانُ إِنْ تَشْكُو الْهَوَى ضَحِكَا</textarea>
+
+        <div class="flex items-center mb-4">
+            <input type="checkbox" id="removeTashkeel" class="mr-2">
+            <label for="removeTashkeel" class="text-gray-700">إزالة التشكيل</label>
+        </div>
+        <button id="processTextBtn"
+            class="w-full bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 transition-colors mb-4">
+            معالجة النص
+        </button>
+
+        <textarea id="outputText"
+            class="w-full h-40 p-4 border border-gray-300 rounded-md bg-gray-50 text-right resize-none"
+            placeholder="النص بدون نقاط يظهر هنا..." readonly></textarea>
+    </main>
+
+    <footer class="mt-6 text-center text-sm text-gray-500">
+        &copy; 2024 Dot Removal Tool. جميع الحقوق محفوظة.
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
